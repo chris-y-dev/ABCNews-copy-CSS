@@ -1,0 +1,216 @@
+.hero-image__container {
+  width: 100%;
+  display: block;
+  background-image: url(images/danandrews.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20rem;
+  height: 33vh;
+  border: 1px dashed red;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 48rem) {
+  .hero-image__container {
+    background-position: 0 -60px;
+    height: 40vh;
+  }
+}
+
+.hero-image__container h1 {
+  font-size: 1.5rem;
+  position: relative;
+  margin: 0;
+  top: 8rem;
+  min-width: 9rem;
+}
+
+.hero-image__container h2 {
+  font-size: 1rem;
+  max-width: 60%;
+  min-width: 14rem;
+  font-weight: normal;
+  top: 8rem;
+  resize: none;
+  position: relative;
+}
+
+.hero-image__container button {
+  border: none;
+  min-width: 8rem;
+  background-color: yellow;
+  padding: 0.5rem 1rem;
+  position: relative;
+  top: 8rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.hero-image__container button:hover {
+  background-color: white;
+  cursor: pointer;
+  transform: scale(1.06);
+  transition: scale 400ms ease-in;
+}
+
+.top-stories {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.top-stories > h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.top-stories__container {
+  margin: auto;
+  border-bottom: 1px solid grey;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.top-stories__container h1 {
+  font-size: 1rem;
+}
+
+.top-stories__container a {
+  text-decoration: none;
+}
+
+.top-stories__container p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.top-stories__button {
+  font-size: 0.8rem;
+  height: 100%;
+  font-weight: bold;
+  width: 100%;
+  padding: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(125, 236, 236);
+  border: none;
+  border-radius: 6px;
+}
+
+.top-stories__button:hover {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 0.8rem RGBA(0, 0, 0, 0.4);
+  transform: scale(1.015);
+}
+
+.featured-articles__container {
+  background: rgb(240, 240, 240);
+  display: grid;
+  grid-template-areas:
+    "article-1"
+    "article-2"
+    "article-3";
+  padding: 0.5rem;
+  height: 100%;
+}
+
+@media (min-width: 30rem) {
+  .featured-articles__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "article-1 article-1"
+      "article-2 article-3";
+  }
+
+  .featured-articles__image2 {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+  }
+
+  .featured-articles__image3 {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+  }
+}
+
+.featured-articles {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.featured-articles__title {
+  font-size: 1.1rem;
+}
+
+.featured-articles__title:hover,
+.featured-articles__title:active {
+  color: blue;
+}
+
+.featured-articles__category {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.featured-articles__container .featured-articles__article-1 {
+  grid-area: article-1;
+}
+
+.featured-articles__container .featured-articles__article-2 {
+  grid-area: article-2;
+}
+
+.featured-articles__container .featured-articles__article-3 {
+  grid-area: article-3;
+}
+
+.featured-articles__linked-container {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.featured-articles__linked-container p {
+  display: none;
+}
+
+@media (min-width: 50rem) {
+  .featured-articles__linked-container p {
+    display: inherit;
+  }
+}
+
+.featured-articles__image1 {
+  background: url(/images/tiktok.jpg);
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.featured-articles__image2 {
+  background: url(/images/covid.jpg);
+  height: 12rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+  display: block;
+}
+
+.featured-articles__image3 {
+  background-image: url(/images/scottMorrison.jpg);
+  height: 12rem;
+  background-size: cover;
+  background-repeat: none;
+}
