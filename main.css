@@ -617,3 +617,7 @@
 .help__back-to-top {
   float: right;
 }
+
+.footer__container {
+  background-color: rgb(73, 73, 73);
+}
