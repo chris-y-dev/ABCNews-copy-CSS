@@ -616,6 +616,12 @@
 
 .help__back-to-top {
   float: right;
+  text-decoration: none;
+  color: black;
+}
+
+.help__back-to-top:hover {
+  text-decoration: underline;
 }
 
 .footer__container {
