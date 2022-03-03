@@ -621,3 +621,11 @@
 .footer__container {
   background-color: rgb(73, 73, 73);
 }
+
+.footer__socials img {
+  width: 20px;
+}
+
+.footer__socials ul {
+  list-style: none;
+}
