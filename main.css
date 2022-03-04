@@ -625,13 +625,107 @@
 }
 
 .footer__container {
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(42, 46, 48);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 3rem 1rem;
+  font-size: 1rem;
+}
+
+.footer__sub-container {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer__branding a {
+  width: 100%;
+}
+
+.footer__branding a img {
+  width: 150px;
+  margin: 0;
+  filter: invert(1);
+}
+
+.footer__branding .footer__sub-container h1 {
+  color: grey;
+  font-size: 1rem;
+}
+
+.footer__branding .footer__subtext {
+  margin-top: 1rem;
+}
+
+.footer__title {
+  color: grey;
+  font-size: 1rem;
+}
+
+.footer__subtext {
+  color: grey;
+}
+
+.footer__subtext-small {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.footer__section__links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.8rem;
+}
+
+.footer__section__links {
+  padding: 0;
+}
+
+.footer__section__links li {
+  margin: 0.8rem 0;
+}
+
+.footer__socials {
+  font-size: 0.8rem;
+}
+
+.footer__socials__links {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .footer__socials img {
   width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  filter: invert(1);
 }
 
 .footer__socials ul {
   list-style: none;
+  padding: 0 0rem;
+}
+
+.footer__socials li {
+  padding: none;
+}
+
+.footer__signup__button-container {
+  width: 100%;
+}
+
+.footer__signup__button {
+  background-color: rgb(255, 208, 0);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.footer__signup__button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
